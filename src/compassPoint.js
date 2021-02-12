@@ -5,7 +5,7 @@ export default function compassPoint(degree) {
   let direction = "N";
   if (23.5 <= degree < 67.5) {
     direction = "NE";
-  } else if (67.5 <= degree < 112.5) {
+  } else if (67.5 <= degree && degree < 112.5) {
     direction = "E";
   } else if (112.5 <= degree < 157.5) {
     direction = "SE";

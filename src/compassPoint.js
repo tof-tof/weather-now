@@ -1,7 +1,5 @@
-
 /* eslint-disable no-mixed-operators*/
 export default function compassPoint(degree) {
- 
   let direction = "N";
   if (23.5 <= degree && degree < 67.5) {
     direction = "NE";
@@ -18,7 +16,6 @@ export default function compassPoint(degree) {
   } else if (292.5 <= degree && degree < 337.5) {
     direction = "NW";
   }
-  
+
   return direction;
-  
 }

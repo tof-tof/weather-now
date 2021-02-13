@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 function Footer() {
-    return (
-        <header className="bg-gray-200 text-center text-xs p-3 inset-bottom-0 w-full">
-            &copy; Copyright 2021
-        </header>
-    )
+  return (
+    <header className="bg-gray-200 text-center text-xs p-3 inset-bottom-0 w-full">
+      &copy; Copyright 2021
+    </header>
+  );
 }
 export default Footer;

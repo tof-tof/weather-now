@@ -17,6 +17,7 @@
     "start": "yarn start:tailwind && react-scripts start",
     "build:b:react": "react-scripts build",
     "test": "react-scripts test",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -44,6 +45,7 @@
     "postcss": "^8.2.5",
     "postcss-cli": "^8.3.1",
     "postcss-nested": "^5.0.3",
+    "prettier": "^2.2.1",
     "tailwindcss": "^2.0.3"
   }
 }

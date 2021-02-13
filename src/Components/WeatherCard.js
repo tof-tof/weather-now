@@ -12,7 +12,7 @@ function WeatherCard({ place, onChecked }) {
         <img
           src={`https://openweathermap.org/img/wn/${place.icon}@2x.png`}
           alt={place.description + " icon"}
-          className="w-32 h-32"
+          className="w-full h-full"
         />
         <h4 className="text-2xl font-bold">
           {place.name}, {place.country}

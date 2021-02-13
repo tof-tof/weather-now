@@ -60,7 +60,7 @@ export default function Search() {
     <div className="container mx-auto pt-6">
       <div className="flex justify-center max-w-screen-sm mx-auto overflow-hidden px-5">
         <form className="w-full h-10 pl-3 pr-2 bg-white border rounded-full flex justify-between items-center relative" onSubmit={searchCity}>
-          <input type="text" name="city" placeholder="Search by city name alone, or by '<city>,<ISO 3166 2 letter country code>'"
+          <input type="text" name="city" placeholder="Search by city name, or by '<city>,<ISO 3166 2 letter country code>'"
             className="appearance-non w-full outline-none focus:outline-none active:outline-none" value={city}
             onChange={(e) => setCity(e.target.value)} />
           <button type="submit" className="ml-1 outline-none focus:outline-none active:outline-none">

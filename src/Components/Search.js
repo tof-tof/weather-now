@@ -94,7 +94,7 @@ export default function Search() {
 
       <div className="container mx-auto justify-center items-center">
         {searching && !message ? (
-          <div className="flex justify-center">
+          <div className="flex justify-center my-8">
             <BeatLoader loading={searching} color='#ffffff' size={50} />
           </div>
         ) : message ? (

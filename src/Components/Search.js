@@ -1,7 +1,7 @@
 import React from "react";
-import Loader from "./Loader";
 import { useState } from "react";
 import WeatherCard from "./WeatherCard";
+import BeatLoader from "react-spinners/BeatLoader";
 
 export default function Search() {
   const [city, setCity] = useState("");
@@ -92,9 +92,11 @@ export default function Search() {
         </form>
       </div>
 
-      <div className="container mx-auto">
+      <div className="container mx-auto justify-center items-center">
         {searching && !message ? (
-          <Loader />
+          <div className="flex justify-center">
+            <BeatLoader loading={searching} color='#ffffff' size={50} />
+          </div>
         ) : message ? (
           <div className="message text-center text-5xl font-bold mt-12 text-red-900">
             {message}

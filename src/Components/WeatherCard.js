@@ -3,9 +3,9 @@ import React from "react";
 import compassPoint from "../compassPoint";
 
 
-function WeatherCard({ place }) {
+function WeatherCard({ place, onChecked }) {
   return (
-    <div className="inline-block px-4 w-64 h-64 text-center"  key={place.name+place.country}> 
+    <div className="inline-block px-4 w-64 h-64 text-center"  key={place.name+place.country} onClick={()=>onChecked(place.name+place.country)}> 
       <div className="bg-blue-500 rounded-lg overflow-hidden shadow-xl my-8 py-4 px-4 focus: bg-gradient-to-r from-green-400 to-blue-500 ">
       <img src={`http://openweathermap.org/img/wn/${place.icon}@2x.png`} alt={place.description+" icon"} className="w-full h-32" />
       <h4 className="text-2xl font-bold">{place.name}, {place.country}</h4>

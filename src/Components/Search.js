@@ -44,6 +44,18 @@ export default function Search() {
       setSearching(false);
     }
   }
+  const deleteCity = (id) => {
+    setContent((prevItems) => {
+      return prevItems.filter(data => {
+        return data.name+data.country !== id;
+      })
+    })
+    setCityList((prevList) => {
+      return prevList.filter(city => {
+        return city !== id;
+      })
+    })
+  }
   return (
     <div className="container mx-auto pt-6">
       <div className="flex justify-center max-w-screen-sm mx-auto overflow-hidden px-5">
@@ -61,7 +73,7 @@ export default function Search() {
 
       <div className="container mx-auto">
         {searching && !message ? (<Loader />) : message ? (<div className="message text-center text-5xl font-bold mt-12 text-red-900">{message}</div>) : (content.map(place => ( 
-          <WeatherCard place={place}  key={place.name+place.country}/>
+          <WeatherCard place={place} key={place.name + place.country} onChecked={deleteCity }/>
           )))}
       </div>
     </div> 

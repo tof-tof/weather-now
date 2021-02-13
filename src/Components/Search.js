@@ -12,7 +12,7 @@ export default function Search() {
   const searchCity = async (e) => {
     e.preventDefault();
     setSearching(true);
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6a704e11e672d58e61bc84715b062d59&units=Metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6a704e11e672d58e61bc84715b062d59&units=Metric`;
     try {
       const response = await fetch(url);
       const data = await response.json();

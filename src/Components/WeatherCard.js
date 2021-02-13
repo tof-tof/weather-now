@@ -10,7 +10,7 @@ function WeatherCard({ place, onChecked }) {
     >
       <div className="bg-blue-500 rounded-lg overflow-hidden shadow-xl my-8 py-4 px-4 focus: bg-gradient-to-r from-green-400 to-blue-500 ">
         <img
-          src={`http://openweathermap.org/img/wn/${place.icon}@2x.png`}
+          src={`https://openweathermap.org/img/wn/${place.icon}@2x.png`}
           alt={place.description + " icon"}
           className="w-full h-32"
         />

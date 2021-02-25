@@ -8,7 +8,7 @@ function WeatherCard({ place, onChecked }) {
       key={place.name + place.country}
       onClick={() => onChecked(place.name + place.country)}
     >
-      <div className=" rounded-lg overflow-hidden shadow-xl my-8 py-4 px-4 bg-gradient-to-r from-green-400 to-blue-500 ">
+      <div className=" rounded-lg overflow-hidden shadow-xl my-8 py-4 px-4 bg-gradient-to-r from-green-400 to-blue-500 hover:from-red-400 hover:via-red-500 hover:to-red-400 hover:-translate-y-1 transform transition" >
         <img
           src={`https://openweathermap.org/img/wn/${place.icon}@2x.png`}
           alt={place.description + " icon"}

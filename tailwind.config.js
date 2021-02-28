@@ -1,6 +1,6 @@
 module.exports = {
   purge: {
-    enabled:false,
+    enabled:true,
     content: [
     './public/**/*.html',
     './src/**/*.js',
@@ -9,7 +9,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      'sans': 'Lato ,"Segoe UI", sans-serif',    
+      'sans': 'Lato, sans-serif',    
     },
     extend: {
     },

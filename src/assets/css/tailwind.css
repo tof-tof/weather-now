@@ -364,7 +364,7 @@ ul {
  */
 
 html {
-  font-family: Lato ,"Segoe UI", sans-serif; /* 1 */
+  font-family: Lato, sans-serif; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -539,9 +539,9 @@ video {
   height: auto;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 .container {
   width: 100%;
@@ -11207,7 +11207,7 @@ video {
 }
 
 .font-sans {
-  font-family: Lato ,"Segoe UI", sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 .font-thin {
@@ -39796,7 +39796,7 @@ video {
   }
 
   .sm\:font-sans {
-    font-family: Lato ,"Segoe UI", sans-serif;
+    font-family: Lato, sans-serif;
   }
 
   .sm\:font-thin {
@@ -68342,7 +68342,7 @@ video {
   }
 
   .md\:font-sans {
-    font-family: Lato ,"Segoe UI", sans-serif;
+    font-family: Lato, sans-serif;
   }
 
   .md\:font-thin {
@@ -96888,7 +96888,7 @@ video {
   }
 
   .lg\:font-sans {
-    font-family: Lato ,"Segoe UI", sans-serif;
+    font-family: Lato, sans-serif;
   }
 
   .lg\:font-thin {
@@ -125434,7 +125434,7 @@ video {
   }
 
   .xl\:font-sans {
-    font-family: Lato ,"Segoe UI", sans-serif;
+    font-family: Lato, sans-serif;
   }
 
   .xl\:font-thin {
@@ -153980,7 +153980,7 @@ video {
   }
 
   .\32xl\:font-sans {
-    font-family: Lato ,"Segoe UI", sans-serif;
+    font-family: Lato, sans-serif;
   }
 
   .\32xl\:font-thin {

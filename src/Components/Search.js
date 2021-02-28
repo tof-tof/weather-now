@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import WeatherCard from "./WeatherCard";
 import BeatLoader from "react-spinners/BeatLoader";
+import Information from "./Information";
 
 export default function Search() {
   const [city, setCity] = useState("");
@@ -60,15 +61,15 @@ export default function Search() {
   };
   return (
     <div className="container mx-auto pt-6">
-      <div className="flex justify-center max-w-screen-sm mx-auto overflow-hidden px-5">
+      <div className="flex justify-center max-w-screen-sm mx-auto px-5">
         <form
-          className="w-full h-10 pl-3 pr-2 bg-white border rounded-full flex justify-between items-center relative"
+          className="w-full h-10 pl-5 pr-2 bg-white border rounded-full flex justify-between items-center relative focus:ring-1"
           onSubmit={searchCity}
         >
           <input
             type="text"
             name="city"
-            placeholder="Search by city name, or by '<city>,<ISO 3166 2 letter country code>'"
+            placeholder="search for anywhere"
             className="appearance-non w-full outline-none focus:outline-none active:outline-none"
             value={city}
             onChange={(e) => setCity(e.target.value)}
@@ -90,8 +91,13 @@ export default function Search() {
             </svg>
           </button>
         </form>
+        <span className="pl-2 hidden lg:block">
+          <Information />
+        </span>
       </div>
-
+      <span className="m-0 p-0 flex justify-center lg:hidden">
+          <Information />
+      </span>
       <div className="container mx-auto justify-center items-center">
         {searching && !message ? (
           <div className="flex justify-center my-8">

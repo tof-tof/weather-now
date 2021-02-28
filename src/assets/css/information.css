@@ -1,0 +1,36 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+i[data-tooltip]::after {
+  content: attr(data-tooltip); 
+  width: 15rem;
+  height: fit-content;
+  position: absolute;
+  left: 14px;
+  top: 0;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  overflow: auto;
+  background-color: rgba(110, 231, 183, 1);
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  padding: 6px;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.8);
+  transform: scale(0);
+  transition: 0.2s ease-in-out;
+}
+
+i[data-tooltip]:hover::after {
+  transform: scale(1);
+  bottom: -150%;
+}
+
+i {
+  color: #a6f3f1;
+  cursor: pointer;
+}
+
+span {
+  position: relative;
+  display: inline-block;
+}
